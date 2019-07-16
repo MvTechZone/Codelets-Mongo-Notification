@@ -1,0 +1,32 @@
+{
+    "name": "codelets-mv/notification",
+    "description": "This is a custom notification, for keeping users notifications received in an application internally.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MvTechZone",
+            "email": "info@mvteczone.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "webpatser/laravel-uuid": "^3.0",
+        "jenssegers/mongodb": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MV\\Notification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MV\\Notification\\MvNotificationService"
+            ],
+            "aliases": {
+                "MvNotification": "MV\\Notification\\MvFacade"
+            }
+        }
+    }
+}
