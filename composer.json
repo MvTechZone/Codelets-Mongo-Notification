@@ -1,5 +1,5 @@
 {
-    "name": "codelets-mv/notification",
+    "name": "codelets-mongodb/notification",
     "description": "This is a custom notification, for keeping users notifications received in an application internally.",
     "type": "library",
     "license": "MIT",
